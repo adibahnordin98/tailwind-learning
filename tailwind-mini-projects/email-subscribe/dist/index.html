@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subscribe</title>
+</head>
+<body>
+    <!-- Background Container -->
+    <div class="flex items-center justify-center h-screen bg-[#f9f4ef]">
+        <!-- Card -->
+        <div class="bg-[#eaddcf] p-2 mx-6 rounded-2xl">
+            <!-- Flex Container -->
+            <div class="flex flex-col md:flex-row rounded-l-xl max-w-sm md:max-w-none">
+                <!-- Image -->
+                <img 
+                src="./assets/images/bakery.png" alt="local bakery" 
+                class="object-cover rounded-xl h-80 sm:h-80 hover:scale-105 duration-200 md:rounded-r-none md:w-1/3">
+
+                <!-- Content -->
+                <div class="p-5 md:p-12">
+                    <h2 class="font-serif text-xl font-medium text-[#020826] text-center md:text-left md:text-2xl">
+                        Promosi hebat menanti anda - Langgan Sekarang!
+                    </h2>
+
+                    <p class="my-5 text-md leading-5 tracking-wide text-center text-[#716040] md:text-left">
+                        Nikmati pelbagai roti sedap. Daftar untuk mendapatkan buletin terkini <i>Caramel Bakery</i>.
+                    </p>
+
+                    <div class="flex flex-col mt-7 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
+                        <input type="text" placeholder="sila masukan emel anda" class="p-2 text-center text-sm bg-transparent border border-[#8c7851] placeholder:text-sm placeholder:text-[#716040] focus:outline-none shadow-md md:w-2/3 rounded-md">
+
+                        <button class="mt-3 shadow-md shadow-[#8c7851]/50 p-2.5 rounded-lg hover:bg-[#716040] text-sm bg-[#8c7851] text-[#fffffe] w-full md:w-1/3 transition duration-150">Langgan</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
