@@ -14,26 +14,43 @@ This repository is a collection of Tailwind CSS mini projects aimed at improving
 
 ## Getting Started
 
-1. Clone the repository:
+1. Refer to the [Templates](#templates) section to start using a template.
+
+2. To use the parent `node_modules` folder for your mini project, follow these steps:
+
+a. Make sure there is no `node_modules` folder in your mini project's subfolder. If it exists, delete it.
+
+b. Install the `cross-env` package in the parent `tailwind-mini-projects` folder, if not already installed:
 
 ```bash
-git clone https://github.com/adibahnordin98/tailwind-learning.git
+cd ..  # Go to the parent folder (tailwind-mini-projects)
+npm install --save-dev cross-env
 ```
 
-2. Install the dependencies in the `tailwind-mini-projects` folder:
+c. Create a `.env` file in the root of your mini project.
 
-```bash
-cd tailwind-mini-projects
-npm install
+d. Add the following line to the `.env` file:
+```
+NODE_PATH=./../node_modules
 ```
 
-3. Choose a starter template and create your mini project based on that template.
+e. Update the `scripts` section in your mini project's `package.json` file:
+
+```json
+"scripts": {
+  "dev": "cross-env NODE_PATH=./../node_modules webpack serve",
+  "build": "cross-env NODE_PATH=./../node_modules webpack"
+}
+```
+
+Now, when you run `npm run dev` or `npm run build` in your mini project's subfolder, it will use the parent `node_modules` folder.
 
 ## Current Mini Projects
 
 | Name                | Date Started | Date Done  |
 |---------------------|--------------|------------|
 | Email Subscription  | 5 May 2023   | 6 May 2023 |
+| Pricing Cards       | 6 May 2023   |            |
 
 _Add more rows as needed._
 
