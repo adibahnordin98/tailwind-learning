@@ -14,27 +14,26 @@ This repository is a collection of Tailwind CSS mini projects aimed at improving
 
 ## Getting Started
 
-1. Refer to the [Templates](#templates) section to start using a template.
+Refer to the [Templates](#templates) section to start using a template.
+To use the parent `node_modules` folder for your mini project, follow these steps:
 
-2. To use the parent `node_modules` folder for your mini project, follow these steps:
+1. Make sure there is no `node_modules` folder in your mini project's subfolder. If it exists, delete it.
 
-a. Make sure there is no `node_modules` folder in your mini project's subfolder. If it exists, delete it.
-
-b. Install the `cross-env` package in the parent `tailwind-mini-projects` folder, if not already installed:
+2. Install the `cross-env` package in the parent `tailwind-mini-projects` folder, if not already installed:
 
 ```bash
 cd ..  # Go to the parent folder (tailwind-mini-projects)
 npm install --save-dev cross-env
 ```
 
-c. Create a `.env` file in the root of your mini project.
+3. Create a `.env` file in the root of your mini project.
 
-d. Add the following line to the `.env` file:
+4. Add the following line to the `.env` file:
 ```
 NODE_PATH=./../node_modules
 ```
 
-e. Update the `scripts` section in your mini project's `package.json` file:
+5. Update the `scripts` section in your mini project's `package.json` file:
 
 ```json
 "scripts": {
@@ -43,7 +42,7 @@ e. Update the `scripts` section in your mini project's `package.json` file:
 }
 ```
 
-Now, when you run `npm run dev` or `npm run build` in your mini project's subfolder, it will use the parent `node_modules` folder.
+_NOTE: As the `node_modules` folder is located in the `tailwind-mini-projects` parent directory, all mini projects will have access to the parent modules._
 
 ## Current Mini Projects
 
@@ -51,8 +50,6 @@ Now, when you run `npm run dev` or `npm run build` in your mini project's subfol
 |---------------------|--------------|------------|
 | Email Subscription  | 5 May 2023   | 6 May 2023 |
 | Pricing Cards       | 6 May 2023   |            |
-
-_Add more rows as needed._
 
 ## Templates
 
@@ -109,8 +106,6 @@ npm run build
 ```
 
 4. Start a local development server (e.g., using [live-server](https://www.npmjs.com/package/live-server)) and open the `index.html` file.
-
-_NOTE: As the `node_modules` folder is located in the `tailwind-mini-projects` parent directory, all mini projects will have access to the parent modules._
 
 ## Contributing
 
