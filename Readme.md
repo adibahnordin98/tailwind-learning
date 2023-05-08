@@ -48,8 +48,9 @@ _NOTE: As the `node_modules` folder is located in the `tailwind-mini-projects` p
 
 | Name                | Date Started | Date Done  |
 |---------------------|--------------|------------|
-| Email Subscription  | 5 May 2023   | 6 May 2023 |
+| Email Subscription  | 5 May 2023   | 5 May 2023 |
 | Pricing Cards       | 6 May 2023   | 6 May 2023 |
+| Modal Product       | 7 May 2023   | 8 May 2023 |
 
 ## Templates
 
